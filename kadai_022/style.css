@@ -1,0 +1,96 @@
+h1{
+  color:rgb(255, 255, 255);
+  margin-bottom: 20px;
+  background-color:rgb(244, 79, 79);
+  display: flex;
+  justify-content: center;
+}
+
+h2{
+  margin:0 auto;
+  font-size: 25px;
+  border-bottom: 3px dotted rgb(236, 122, 122)
+  
+  }
+
+  h2::before {
+    content: "●";
+    color: rgb(239, 111, 139);
+}
+  
+
+p {
+  font-size: 20px;
+  margin:0 auto;
+  
+}
+
+body {
+  margin:0 auto;
+}
+
+main{
+padding:10px,10px,10px,10px;
+
+}
+
+#parent{
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.contents{
+ flex-basis: 25%;
+ text-align: center;
+ margin:10px,10px,15px,15px;
+ padding:20px,20px,0px,0px;
+ display: inline-block;
+ border: solid 3px rgb(238, 204, 204);
+}
+
+p:nth-child(3)::first-letter{
+  font-weight:bold;
+  color:rgb(97, 206, 249);
+
+}
+
+
+
+img{
+  /*   imgに対してサイズを指定すると縦横比が変わってしまう */
+    width:70%;
+    margin:10px,10px,0px,0px;
+    vertical-align:bottom;
+}
+footer{
+background-color:rgb(244, 79, 79);
+display: flex;
+justify-content: center;
+
+}
+
+@media screen and (max-width:768px) {
+   #parent{
+       display: block;
+       margin-bottom:20px;
+   }
+   h2{font-size: 30px;
+  }
+  p{font-size: 25px;
+  }
+
+}
+
+
+a:link {
+  font-size: 20px;
+  color: rgb(255, 255, 255)
+}
+
+a:visited {
+  color: rgb(193, 234, 251);
+}
+a:hover {
+   color: rgb(245, 178, 168);
+}
